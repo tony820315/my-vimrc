@@ -7,5 +7,6 @@ this is my vim setting, you can use it to set the environment quickly.
 $ sh -x vim-install
 $ cd $project
 $ vim-script
+# vim $file and :PluglinInstall
 ```
 
