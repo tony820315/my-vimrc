@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# sudo apt-get install exuberant-ctags
+ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude='*.js'
+cscope -Rbqk
