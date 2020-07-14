@@ -1,6 +1,5 @@
 set nu
 set nocompatible              " be iMproved, required
-set mouse=a
 set selection=exclusive
 set selectmode=mouse,key
 set laststatus=2
@@ -33,6 +32,8 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'mileszs/ack.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'bling/vim-airline'
+Plugin 'fatih/vim-go'
+Plugin 'morhetz/gruvbox'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
