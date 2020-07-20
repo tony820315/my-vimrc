@@ -1,3 +1,4 @@
+set ai
 set nu
 set nocompatible              " be iMproved, required
 set selection=exclusive
@@ -8,6 +9,9 @@ set ruler
 set shiftwidth=4
 set bg=dark
 set tags=./tags,./TAGS,tags;~,TAGS;~
+set cindent
+set expandtab
+
 syntax enable
 colorscheme gruvbox
 
@@ -25,6 +29,9 @@ set laststatus=2
 filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim/
+set expandtab
+set tabstop=4
+
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'preservim/nerdtree'
@@ -53,6 +60,13 @@ endif
 ""將F2設定為開關NERDTree的快捷鍵
 map <f2> :NERDTreeToggle<cr>
 map <F12> :TagbarToggle<CR>
+
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {}<ESC>i
+inoremap < <><ESC>i
+inoremap ‘ ‘‘<ESC>i
+inoremap " ""<ESC>i
 
 ""修改樹的顯示圖示
 let g:NERDTreeDirArrowExpandable = '+'
