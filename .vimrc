@@ -41,6 +41,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'bling/vim-airline'
 Plugin 'fatih/vim-go'
 Plugin 'morhetz/gruvbox'
+Plugin 'bronson/vim-trailing-whitespace'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -60,6 +61,7 @@ endif
 ""將F2設定為開關NERDTree的快捷鍵
 map <f2> :NERDTreeToggle<cr>
 map <F12> :TagbarToggle<CR>
+map <leader><space> :FixWhitespace<cr>
 
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
@@ -79,3 +81,9 @@ let g:NERDTreeSize=30
 let g:NERDTreeShowLineNumbers=1
 ""不顯示隱藏檔案
 let g:NERDTreeHidden=0
+
+" show trailing white spaces
+highlight WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/
+
+
