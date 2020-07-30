@@ -63,13 +63,6 @@ map <f2> :NERDTreeToggle<cr>
 map <F12> :TagbarToggle<CR>
 map <leader><space> :FixWhitespace<cr>
 
-inoremap ( ()<ESC>i
-inoremap [ []<ESC>i
-inoremap { {}<ESC>i
-inoremap < <><ESC>i
-inoremap ‘ ‘‘<ESC>i
-inoremap " ""<ESC>i
-
 ""修改樹的顯示圖示
 let g:NERDTreeDirArrowExpandable = '+'
 let g:NERDTreeDirArrowCollapsible = '-'
@@ -81,6 +74,7 @@ let g:NERDTreeSize=30
 let g:NERDTreeShowLineNumbers=1
 ""不顯示隱藏檔案
 let g:NERDTreeHidden=0
+let g:go_fmt_command = "goimports"
 
 " show trailing white spaces
 highlight WhitespaceEOL ctermbg=red guibg=red
