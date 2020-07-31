@@ -42,6 +42,7 @@ Plugin 'bling/vim-airline'
 Plugin 'fatih/vim-go'
 Plugin 'morhetz/gruvbox'
 Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
