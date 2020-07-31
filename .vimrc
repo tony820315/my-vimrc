@@ -31,6 +31,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim/
 set expandtab
 set tabstop=4
+set clipboard=unnamedplus
 
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
