@@ -32,6 +32,7 @@ set rtp+=~/.vim/bundle/Vundle.vim/
 set expandtab
 set tabstop=4
 set clipboard=unnamedplus
+set clipboard=unnamed
 
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
